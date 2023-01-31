@@ -12,7 +12,7 @@ const DB_URI = process.env.DB_URI!;
                 if(err) {
                     console.log('❌ Error with MongoDB . . .')
                 }else {
-                    console.log('💾 MongoDB conection successfully!')
+                    console.log('💾 MongoDB conection successfully')
                 }
             }
         )

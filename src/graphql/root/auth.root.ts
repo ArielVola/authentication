@@ -40,7 +40,8 @@ export const root = {
             email,
             phonenumber,
             password: await hashText(password),
-            verifyCode: generateRandomNumber()
+            verifyCode: generateRandomNumber(),
+            uploadFolder: Date.now() + '-' + Math.round(Math.random() * 1E9)
         }));
         if( verifyCode ) {
             transporter.sendMail({

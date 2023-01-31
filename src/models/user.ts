@@ -33,6 +33,10 @@ const UserSchema = new Schema({
         type: String,
         minlength: 4,
         maxlength: 25
+    },
+    uploadFolder: {
+        type: String,
+        unique: true
     }
 });
 
